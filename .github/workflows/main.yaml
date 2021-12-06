@@ -5,7 +5,7 @@ name: Report to eth/usd on rinkeby w/ pytelliot
 
 on:
   schedule: 
-  - cron: "* * * * * *" 
+  - cron: "* * * * *" 
     
         
 

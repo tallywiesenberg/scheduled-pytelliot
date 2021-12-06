@@ -10,7 +10,7 @@ endpoints:
   chain_id: 4
   network: rinkeby
   provider: Infura
-  url: ${{ secrets.INFURA_RINKEBY_WSS }}
+  url: ${{ INFURA_RINKEBY_WSS }}
   explorer: https://rinkeby.etherscan.io
 - type: RPCEndpoint
   chain_id: 137

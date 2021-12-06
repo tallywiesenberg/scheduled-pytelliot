@@ -5,8 +5,6 @@ name: Report to eth/usd on rinkeby w/ pytelliot
 
 on: push
     
-        
-
 jobs:
   build:
 
@@ -32,4 +30,7 @@ jobs:
         cp -r ./config ~/
     - name: report :)
       run: telliot-examples --legacy-id 1 report --submit-once
+      env:
+        PK: ${{ secrets.PK }}
+        INFURA_RINKEBY_WSS: ${{ secrets.INFURA_RINKEBY_WSS }}
         

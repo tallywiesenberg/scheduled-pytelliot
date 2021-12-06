@@ -33,5 +33,5 @@ jobs:
       run: |
         cp -r ./config ~/
     - name: report :)
-      run: telliot-examples --legacy-id 1 --submit-once report
+      run: telliot-examples --legacy-id 1 report --submit-once
         

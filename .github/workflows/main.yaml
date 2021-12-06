@@ -5,7 +5,7 @@ name: Report to eth/usd on rinkeby w/ pytelliot
 
 on:
   schedule: 
-  - cron: "* * * * *" 
+  - cron: "* * * * * *" 
     
         
 
@@ -31,7 +31,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Move pre-made pytelliot configs to home directory
       run: |
-        cp ./config ~/
+        cp -r ./config ~/
     - name: report :)
       run: telliot-examples --legacy-id 1 --submit-once report
         

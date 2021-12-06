@@ -4,13 +4,13 @@ endpoints:
   chain_id: 1
   network: mainnet
   provider: Infura
-  url: ${{ secrets.INFURA_MAINNET_WSS}}
+  url: $INFURA_MAINNET_WSS
   explorer: https://etherscan.io
 - type: RPCEndpoint
   chain_id: 4
   network: rinkeby
   provider: Infura
-  url: ${{ INFURA_RINKEBY_WSS }}
+  url: $INFURA_RINKEBY_WSS
   explorer: https://rinkeby.etherscan.io
 - type: RPCEndpoint
   chain_id: 137

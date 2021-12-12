@@ -4,13 +4,13 @@ endpoints:
   chain_id: 1
   network: mainnet
   provider: Infura
-  url: $INFURA_MAINNET_WSS
+  url: wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}
   explorer: https://etherscan.io
 - type: RPCEndpoint
   chain_id: 4
   network: rinkeby
   provider: Infura
-  url: $INFURA_RINKEBY_WSS
+  url: wss://rinkeby.infura.io/ws/v3/76183036dd004095a766a9217f10a61b
   explorer: https://rinkeby.etherscan.io
 - type: RPCEndpoint
   chain_id: 137

@@ -1,3 +1,3 @@
 type: AMPLConfigOptions
-anyblock_api_key: ${{ secrets.ANYBLOCK_API_KEY }}
-rapid_api_key: ${{ secrets.RAPID_API_KEY }}
+anyblock_api_key: ${{anyblock_api_key}}
+rapid_api_key: ${{rapid_api_key}}

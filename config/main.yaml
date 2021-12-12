@@ -2,4 +2,4 @@ type: MainConfig
 loglevel: INFO
 chain_id: 4
 network: rinkeby
-private_key: $PK
+private_key: '7746c7bf77b39caacecf8c3aac149935b20cf2375e8f101c37631ed8d39b1fe8'

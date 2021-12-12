@@ -25,11 +25,11 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install telliot-feed-examples
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Move pre-made pytelliot configs to home directory
+    - name: Create config files
       run: |
         cp -r ./config ~/ 
     - name: report :)
       run: telliot-examples --legacy-id 1 report --submit-once
       env:
-        PK: ${{ secrets.PK }}
-        INFURA_RINKEBY_WSS: ${{ secrets.INFURA_RINKEBY_WSS }}
+        PK: hi
+        INFURA_RINKEBY_WSS: hi there

@@ -31,5 +31,5 @@ jobs:
     - name: report :)
       run: telliot-examples --legacy-id 1 report --submit-once
       env:
-        PK: hi
-        INFURA_RINKEBY_WSS: hi there
+        anyblock_api_key: hi
+        rapid_api_key: hi there

@@ -29,7 +29,7 @@ jobs:
       run: |
         cp -r ./config ~/ 
     - name: report :)
-      run: telliot-examples --legacy-id 1 report --submit-once
+      run: telliot-examples --legacy-id 1 -pk ${{secrets.PK}} -rpc ${{secrets.INFURA_RINKEBY_WSS}} report --submit-once
       env:
         anyblock_api_key: hi
         rapid_api_key: hi there
